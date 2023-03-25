@@ -1,13 +1,14 @@
-data "aws_vpc" "default" {
-  default = true
-}
 
-data "aws_subnets" "default" {
+# data "aws_vpc" "default" {
+  default = true
+#}
+
+# data "aws_subnets" "default" {
   filter {
     name = "vpc-id"
     values = [data.aws_vpc.default.id]
   }
-}
+#}
 
 output "alb_dns_name" {
   value = aws_lb.example.dns_name
