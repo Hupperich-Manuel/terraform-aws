@@ -4,6 +4,8 @@ variable "server_port" {
   default = 8080
 }
 
+# REQUIRED PARAMETERS 
+
 variable "cluster_name" {
   description = "The name to use for all the cluster resources"
   type = string
