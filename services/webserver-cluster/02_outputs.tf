@@ -1,13 +1,13 @@
 
 # data "aws_vpc" "default" {
-  default = true
+  #default = true
 #}
 
 # data "aws_subnets" "default" {
-  filter {
-    name = "vpc-id"
-    values = [data.aws_vpc.default.id]
-  }
+  #filter {
+   # name = "vpc-id"
+    #values = [data.aws_vpc.default.id]
+  #}
 #}
 
 output "alb_dns_name" {
